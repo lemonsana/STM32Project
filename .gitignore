@@ -1,0 +1,37 @@
+# ---- Keil MDK build outputs (regenerated on build, do not commit) ----
+Objects/
+Listings/
+DebugConfig/
+RTE/
+
+# ---- Compiler / linker / debug intermediates ----
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.bin
+*.elf
+*.map
+*.lst
+*.lnp
+*.dep
+*.iex
+*.sct
+*.htm
+*.i
+*.sbr
+*.l1p
+*.l2p
+*.tra
+*.__i
+
+# ---- Keil per-user GUI layout files ----
+*.uvguix.*
+*.uvgui.*
+
+# ---- Backup / temp files ----
+*.bak
+*~
+Thumbs.db
+desktop.ini
