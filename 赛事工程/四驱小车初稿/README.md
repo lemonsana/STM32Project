@@ -2,9 +2,14 @@
 
 赛事工程 · 浙江理工大学科技与艺术学院第五届机器人大赛（2026-12-03）参赛车第一版工程。
 
-基于 **STM32F103C8T6 + 标准外设库**，结构沿用江协科技工程模板（Start / Library / System / Hardware / User），
+基于 **STM32F103RCT6 + 标准外设库**，结构沿用江协科技工程模板（Start / Library / System / Hardware / User），
 对应 B 站《【四驱智能小车】-STM32主控-循迹-避障-2.4G遥控》第 22~23 集的内容：
 **GPIO 控制正反转 + 定时器 PWM 调速**。
+
+> **芯片说明**：本工程已从模板的 C8T6（中容量）改为 **RCT6（大容量，256KB Flash / 48KB RAM）**。
+> 改动四处：Device 选 `STM32F103RC`、启动文件换 `startup_stm32f10x_hd.s`、
+> 宏定义改 `STM32F10X_HD`、内存改 IROM 0x40000 / IRAM 0xC000（烧写算法 `STM32F10x_512`）。
+> 如果你拿到的是 C8T6 的板子，把这四处改回去即可。
 
 ## 当前实现了什么
 
